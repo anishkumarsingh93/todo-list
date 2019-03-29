@@ -1,21 +1,23 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
 
-<header class="jumbotron" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
-    </div>
-  </div>
-</header>
-
 <div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
-    </div>
-  </div>
+	<div class="col-md-4">
+		<h1>ToDo Example</h1>
+
+	<form action="" method="POST">
+
+	<div class="form-group">
+		<label for="">User Name:</label>
+		<input class="form-control" autofocus="" type="text"
+			name="" value="" />
+	</div>
+
+	<button class="btn btn-default" type="submit">Login</button>
+	
+	</form>
+	</div>
 </div>
+
 
 {{template "footer.html" .}}
